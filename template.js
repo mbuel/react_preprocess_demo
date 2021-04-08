@@ -3,11 +3,37 @@
 var Navbar = function Navbar() {
   return React.createElement(
     "nav",
-    { className: "navbar navbar-expand-lg navbar-light bg-light" },
+    { className: "navbar navbar-expand navbar-light bg-light" },
     React.createElement(
       "a",
-      { className: "navbar-brand", href: "#" },
+      { className: "navbar-brand", href: "index.html" },
       "Navbar"
+    ),
+    React.createElement(
+      "div",
+      { className: "collapse navbar-collapse", id: "navbarNav" },
+      React.createElement(
+        "ul",
+        { className: "navbar-nav" },
+        React.createElement(
+          "li",
+          { className: "nav-item" },
+          React.createElement(
+            "a",
+            { className: "nav-link", href: "index.html" },
+            "Home"
+          )
+        ),
+        React.createElement(
+          "li",
+          { className: "nav-item" },
+          React.createElement(
+            "a",
+            { className: "nav-link", href: "press.html" },
+            "Press"
+          )
+        )
+      )
     )
   );
 };
