@@ -1,12 +1,13 @@
-const App = () => {
-    return (
-      <Template>
-        <h1>Press page</h1>
-      </Template>
-    );
-  }
-  
-  ReactDOM.render(
-    <App />,
-    document.getElementById('root')
+var App = function App() {
+  return React.createElement(
+    Template,
+    null,
+    React.createElement(
+      'h1',
+      null,
+      'Press page'
+    )
   );
+};
+
+ReactDOM.render(React.createElement(App, null), document.getElementById('root'));
